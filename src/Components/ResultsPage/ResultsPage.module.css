@@ -1,0 +1,202 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.containerImag {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    order: -1;
+
+}
+
+.containerSearch {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.imagen {
+    height: 15vh;
+}
+
+
+.containerImg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.apss {
+
+    background-image: url('../../assets/apps.svg');
+    background-repeat: no-repeat;
+
+}
+
+.appsButton {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 14px;
+    color: #100;
+}
+
+a:hover {
+    color: #100;
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .containerImg {
+        position: static;
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4285f4;
+    background-size: cover;
+    background-position: center;
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+
+.inputPortada {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23222222' strokeLinecap='round' strokeMiterlimit='10' d='M11.5 11.5l3.5 3.5'/%3E%3Ccircle cx='6.5' cy='6.5' r='5.75' fill='none' stroke='%23222222' strokeLinecap='round' strokeMiterlimit='10'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 15px;
+    max-width: 600px;
+    width: 50vh;
+    height: 7vh;
+    padding: 10px;
+    padding-left: 40px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50rem;
+    font-size: 18px;
+    margin-right: 600px;
+
+}
+
+
+
+h2 {
+    font-size: 20px;
+    color: #4285f4;
+    cursor: pointer;
+}
+
+
+h2:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    width: 50%;
+    
+
+}
+
+
+h2,
+p {
+    text-align: left;
+    ;
+}
+
+.card {
+    /* display: flex; */
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 1px;
+    margin-left: auto;
+    align-self: flex-start;
+    position: absolute;
+    top: 150px;
+    left: 80%;
+    transform: translateX(-60%);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.cardContent {
+    padding: 15px;
+    left: 0;
+
+
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .containerImag {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .inputPortada {
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containerImg {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .appsButton {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerSearch {
+        margin-top: 20px;
+    }
+}
